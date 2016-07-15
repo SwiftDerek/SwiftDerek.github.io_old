@@ -70,3 +70,13 @@ body {
 .modal-dialog {
     width: 90%;
 }
+
+.frogger {
+    width: 80%;
+    height: 350px;
+    display: block;
+}
+
+.frogger-padding {
+    padding-left: 100px;
+}
