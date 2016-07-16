@@ -16,35 +16,42 @@
 <!-- NAVBAR -->
 <header>
     <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html"><img class="img-circle img-responsive portfolio-brand"
-                                                               src="images/me.jpg"/></a>
-            </div>
+        <div class="container-fluid index-navbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#">Page 1</a></li>
-                <li><a href="#">Page 2</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Projects<span class="caret"></span></a>
+                    <ul class="dropdown-menu index-dropdown">
+                        <li><a href="#jimmy-john">Jimmy John's Chart's</a></li>
+                        <li><a href="#ant-sim">Ant Simulation</a></li>
+                        <li><a href="#story-prodigy">Story Prodigy</a></li>
+                        <li><a href="#frogger">Frogger Arcade Game</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about-me">About Me</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <li><a href="https://github.com/SwiftDerek" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/pub/derek-williams/118/865/686" target="_blank">LinkedIn</a></li>
+                <li><a href="DerekWilliamsDevResume.pdf" target="_blank">Resume</a></li>
             </ul>
         </div>
     </nav>
 </header>
 <!-- BACKGROUND IMAGE -->
 <section class="background-img-index">
-    <div class="col-md-12 text-uppercase text-center index-heading">
-        <h1 class="index-heading-style">Derek Williams</h1>
-        <h3 class="index-heading-style-caption">An aspiring software/web developer. Check out some of my awesome
-            projects!</h3>
+    <div class="row">
+        <div class="col-md-12 text-uppercase text-center index-heading">
+            <h1 class="index-heading-style">Derek Williams</h1>
+            <h3 class="index-heading-style-caption">An aspiring software/web developer.</h3>
+        </div>
     </div>
 </section>
 <!-- MAIN PROJECTS -->
 <main>
     <div class="container index-main">
-        <div class="row">
+        <div id="jimmy-john" class="row">
             <div class="col-md-6 text-left index-main-div">
                 <h2>Jimmy John's Charts</h2>
                 <br>
@@ -78,7 +85,7 @@
             </div>
         </div>
         <hr class="hr-style">
-        <div class="row">
+        <div id="ant-sim" class="row">
             <div class="col-md-6 img-responsive index-main-div">
                 <a data-toggle="modal" href="#AntSimModal">
                     <img class="index-main-pic" src="images/AntSimulation.JPG" alt="Ant Simulation Example"/>
@@ -115,7 +122,7 @@
             </div>
         </div>
         <hr class="hr-style">
-        <div class="row">
+        <div id="story-prodigy" class="row">
             <div class="col-md-6 text-left index-main-div">
                 <h2>Story Prodigy</h2>
                 <br>
@@ -136,10 +143,10 @@
             </div>
         </div>
         <hr class="hr-style">
-        <div class="row">
-            <div class="col-md-6 img-responsive index-main-div frogger-padding">
+        <div id="frogger" class="row">
+            <div class="col-md-6 index-main-div frogger-padding img-responsive">
                 <a href="https://swiftderek.github.io/frontend-nanodegree-arcade-game/" target="_blank">
-                    <img class="index-main-pic frogger" src="images/frogger.JPG" alt="Frogger Example"/>
+                    <img class="img-responsive index-main-pic frogger" src="images/frogger.JPG" alt="Frogger Example"/>
                 </a>
                 Click to play! (Arrow keys move the player)
             </div>
@@ -157,17 +164,10 @@
                 <p>
             </div>
         </div>
-        <hr class="hr-style"/>
-    </div>
-    <div class="row">
-        <div class="col-md-12 text-center">
-            <h2>To view more examples/code check out my <a href="https://github.com/SwiftDerek" target="_blank">GitHub
-                page!</a></h2>
-        </div>
     </div>
     <div class="container-fluid index-main-below">
         <div class="container text-center">
-            <div class="row">
+            <div id="about-me" class="row">
                 <div class="col-md-6 text-left">
                     <h3>About Me:</h3>
                     <h4>I've always been interested in technology and software development but never had the opportunity
@@ -180,9 +180,8 @@
                         passion for teaching I
                         am incredibly excited to explore my new career path in software/web development. I also enjoy to
                         travel, play piano, lift,
-                        and produce music. If interested in learning more or contacting me, check out my resume or
-                        LinkedIn page at the top or bottom
-                        of the page.</h4>
+                        and produce music. If interested in learning more or contacting me, check out my <a
+                                href="DerekWilliamsDevResume.pdf">resume</a>.</h4>
                 </div>
                 <div class="col-md-6">
                     <img class="img-responsive me2" src="images/me2.jpg" alt="Picture of Me with Elementary Kids"/>
@@ -191,10 +190,19 @@
         </div>
     </div>
 </main>
-<footer>
+<footer id="footer">
     <div class="row">
-        <div class="col-md-12 text-center">
-            
+        <div class="col-md-12 text-center index-footer">
+            <a href="https://www.linkedin.com/pub/derek-williams/118/865/686">
+
+                <img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_myprofile_160x33.png" width="160"
+                     height="33" border="0" alt="View Derek Williams's profile on LinkedIn">
+
+            </a>
+            <a href="https://github.com/SwiftDerek">
+                <img src="images/GitHub_Logo.png" width="90" height="33" alt="GitHub Profile Link"/>
+            </a>
+            <p>&copy;Derek Williams. All rights reserved.</p>
         </div>
     </div>
 </footer>
