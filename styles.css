@@ -1,6 +1,13 @@
 body {
     font-family: 'Catamaran', sans-serif;
     background-color: snow;
+    -webkit-font-smoothing: antialiased;
+}
+
+.navbar {
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0;
 }
 
 .navbar-brand {
@@ -63,6 +70,13 @@ body {
     font-size: 1.25em;
 }
 
+.index-main-below {
+    background-color: #f7fcff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 15px;
+}
+
 .hr-style {
     border-color: grey;
 }
@@ -79,4 +93,12 @@ body {
 
 .frogger-padding {
     padding-left: 100px;
+}
+
+.me2 {
+    border: 3px solid black;
+    border-radius: 25%;
+    margin: 15px;
+    height: 300px;
+
 }
